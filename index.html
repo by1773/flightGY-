@@ -237,7 +237,7 @@
 					window.location.href = "login.html"
 			    } else {
 					
-					ajaxmod.layuiGet("/anspray-admin/datas/menulist.json", "", function(res) {
+					ajaxmod.layuiGet("/datas/menulist.json", "", function(res) {
 						var str = `<option value="">便捷菜单查询</option>`;
 						res.data.forEach(function (e) {
 							e.children.forEach(function (i) {

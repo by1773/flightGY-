@@ -179,7 +179,7 @@
             //监听提交
             form.on('submit(form-login)', function (data) {
                 data.field.CaptchaKey = uuid;
-                ajaxmod.layuiGet("/anspray-admin/datas/login.json", data.field, function (res) {
+                ajaxmod.layuiGet("/datas/login.json", data.field, function (res) {
                     if (res.success) {
                         cookie.set("usertoken", res.data.token)
                         cookie.set("username", res.data.userName)
